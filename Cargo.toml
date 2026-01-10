@@ -1,0 +1,20 @@
+[package]
+name = "lightspeedvalidator"
+version = "0.1.0"
+edition = "2021"
+description = "A Rust-based tool for analyzing gamma-ray timing data to test Einstein's speed of light constancy hypothesis"
+license = "MIT"
+authors = ["Scientific Computing Team"]
+repository = "https://github.com/example/lightspeedvalidator"
+documentation = "https://docs.rs/lightspeedvalidator"
+
+[dependencies]
+clap = { version = "4.0", features = ["derive"] }
+csv = "1.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+statrs = "0.16"
+rand = "0.8"
+
+[dev-dependencies]
+assert_matches = "1.5"
